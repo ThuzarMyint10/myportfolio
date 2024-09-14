@@ -1,7 +1,5 @@
-// import React, { useContext } from "react";
-// import "./Portfolio.css";
 import React, { useContext } from "react";
-import styles from "./Portfolio.module.css"; // Using CSS Modules
+import "./Portfolio.css"; 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper";
 import "swiper/css";
