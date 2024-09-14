@@ -5,30 +5,30 @@ import "swiper/css";
 
 import { Pagination } from "swiper";
 import "swiper/css/pagination";
-import profilePic1 from "../../img/profile1.jpg";
-import profilePic2 from "../../img/profile2.jpg";
-import profilePic3 from "../../img/profile3.jpg";
-import profilePic4 from "../../img/profile4.jpg";
+import designPic1 from "../../img/design1.jpg";
+import designPic2 from "../../img/design2.jpg";
+import designPic3 from "../../img/design3.jpg";
+import designPic4 from "../../img/design4.jpg";
 
 const Testimonial = () => {
   const clients = [
     {
-      img: profilePic1,
+      img: designPic1,
       review:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex officiis molestiae quod tempora laudantium, cumque error a nisi placeat quae exercitationem, maiores reiciendis! Eaque dicta minima, iure maiores dolorum sed.",
     },
     {
-      img: profilePic2,
+      img: designPic2,
       review:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex officiis molestiae quod tempora laudantium, cumque error a nisi placeat quae exercitationem, maiores reiciendis! Eaque dicta minima, iure maiores dolorum sed.",
     },
     {
-      img: profilePic3,
+      img: designPic3,
       review:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex officiis molestiae quod tempora laudantium, cumque error a nisi placeat quae exercitationem, maiores reiciendis! Eaque dicta minima, iure maiores dolorum sed.",
     },
     {
-      img: profilePic4,
+      img: designPic4,
       review:
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex officiis molestiae quod tempora laudantium, cumque error a nisi placeat quae exercitationem, maiores reiciendis! Eaque dicta minima, iure maiores dolorum sed.",
     },
