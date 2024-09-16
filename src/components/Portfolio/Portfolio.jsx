@@ -1,10 +1,8 @@
 import React, { useContext } from "react";
-import "./Portfolio.css"; 
+import styles from './Portfolio.module.css';
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation } from "swiper";
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
+import { Pagination, Navigation } from "swiper"; 
+import 'swiper/swiper-bundle.min.css';
 import { themeContext } from "../../Context";
 
 // Image URLs array
@@ -24,31 +22,29 @@ const images = [
 const Portfolio = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
-
   return (
+    <div>
     <div className={styles.portfolio} id="portfolio">
-      {/* heading */}
-      <span style={{ color: darkMode ? "white" : "" }}>Recent Projects</span>
-      <span>Portfolio</span>
-
-      {/* Swiper slider */}
-      <Swiper
-        spaceBetween={30}
-        slidesPerView={3}
-        grabCursor={true}
-        pagination={{ clickable: true }}
-        navigation={true}
-        modules={[Pagination, Navigation]}
-        className={styles.portfolioSlider}
-      >
-        {images.map((img, index) => (
+    {/* heading */}
+    <span style={{ color: darkMode ? "white" : "" }}>Recent Projects</span>
+    <span>Portfolio</span>
+    </div>
+    <Swiper
+          slidesPerView={1}
+          grabCursor={true}
+          pagination={{ clickable: true }}
+          navigation={true}
+          modules={[Pagination, Navigation]}
+          className={styles.portfolioSlider}
+    >
+       {images.map((img, index) => (
           <SwiperSlide key={index}>
-            <img src={img.default} alt={`Detail Drawing ${index + 1}`} />
+            <img src={img} alt={`Detail Drawing ${index + 1}`} />
           </SwiperSlide>
         ))}
-      </Swiper>
+    </Swiper>
     </div>
-  );
+  ); 
 };
 
 export default Portfolio;
