@@ -90,7 +90,7 @@ const Intro = () => {
         <a href="https://www.linkedin.com/in/chit-sue-b25018301" target="_blank" rel="noopener noreferrer">
             <LinkedIn color="orange" size={"8rem"} />
           </a>
-          <a href="https://facebook.com/your-facebook-profile" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.facebook.com/chit.sue.332" target="_blank" rel="noopener noreferrer">
             <Facebook color="orange" size={"8rem"} />
           </a>
           <a href="https://wa.me/66823321513" target="_blank" rel="noopener noreferrer">
