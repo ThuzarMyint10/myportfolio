@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
+import { themeContext } from "../../Context";
 import styles from './Portfolio.module.css';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper"; 
 import 'swiper/swiper-bundle.min.css';
-import { themeContext } from "../../Context";
 
 // Image URLs array
 const images = [
@@ -26,8 +26,8 @@ const Portfolio = () => {
     <div>
     <div className={styles.portfolio} id="portfolio">
     {/* heading */}
-    <span style={{ color: darkMode ? "white" : "" }}>Recent Projects</span>
-    <span>Portfolio</span>
+    <span style={{ color: darkMode ? "white" : "" }}>Detail</span>
+    <span>Drawing</span>
     </div>
     <Swiper
           slidesPerView={1}
