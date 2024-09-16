@@ -27,7 +27,6 @@ function App() {
       <Services />
       <Experience />
       <ImageSlider />
-      {/* <Works /> */}
       <Portfolio />
       <Testimonial />
       <Contact />

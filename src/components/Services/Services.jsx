@@ -20,7 +20,7 @@ const Services = () => {
   };
 
   return (
-    <div className="services" id="service">
+    <div className="services" id="myservices">
       {/* left side */}
       <div className="awesome">
         {/* dark mode */}
