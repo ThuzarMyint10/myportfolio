@@ -1,9 +1,9 @@
 import React from "react";
 import "./Footer.css";
 import Wave from "../../img/wave.png";
-import Insta from "@iconscout/react-unicons/icons/uil-instagram";
 import Facebook from "@iconscout/react-unicons/icons/uil-facebook";
-import Gitub from "@iconscout/react-unicons/icons/uil-github";
+import LinkedIn from "@iconscout/react-unicons/icons/uil-linkedin";
+import Gitub from "@iconscout/react-unicons/icons/uil-whatsapp";
 
 const Footer = () => {
   return (
@@ -12,8 +12,8 @@ const Footer = () => {
       <div className="f-content">
         <span>chitsue110@gmail.com</span>
         <div className="f-icons">
-          <a href="https://instagram.com/your-instagram-profile" target="_blank" rel="noopener noreferrer">
-            <Insta color="white" size={"3rem"} />
+          <a href="https://www.linkedin.com/in/chit-sue-b25018301" target="_blank" rel="noopener noreferrer">
+            <LinkedIn color="white" size={"3rem"} />
           </a>
           <a href="https://facebook.com/your-facebook-profile" target="_blank" rel="noopener noreferrer">
             <Facebook color="white" size={"3rem"} />

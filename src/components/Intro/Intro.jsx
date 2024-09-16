@@ -7,9 +7,12 @@ import glassesimoji from "../../img/glassesimoji.png";
 import thumbup from "../../img/thumbup.png";
 import crown from "../../img/crown.png";
 import FloatinDiv from "../FloatingDiv/FloatingDiv";
-import Github from "../../img/github.png";
-import LinkedIn from "../../img/linkedin.png";
-import Instagram from "../../img/instagram.png";
+// import Github from "../../img/github.png";
+// import LinkedIn from "../../img/linkedin.png";
+// import Instagram from "../../img/instagram.png";
+import Facebook from "@iconscout/react-unicons/icons/uil-facebook";
+import LinkedIn from "@iconscout/react-unicons/icons/uil-linkedin";
+import Whatsup from "@iconscout/react-unicons/icons/uil-whatsapp";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
@@ -73,7 +76,7 @@ const Intro = () => {
       <div className="i-left">
         <div className="i-name">
           {/* yahan change hy darkmode ka */}
-          <span style={{ color: darkMode ? "white" : "" }}>Hy! I Am</span>
+          <span style={{ color: darkMode ? "white" : "" }}>Hey! I Am</span>
           <span>Thein Htaik</span>
           <span>
           I am a civil engineer with experience in all phases of construction, from design to quality control. I have also worked in a wide variety of settings.
@@ -84,14 +87,14 @@ const Intro = () => {
         </Link>
         {/* social icons */}
         <div className="i-icons">
-          <a href="https://github.com/your-github-profile" target="_blank" rel="noopener noreferrer">
-            <img src={Github} alt="GitHub" />
+        <a href="https://www.linkedin.com/in/chit-sue-b25018301" target="_blank" rel="noopener noreferrer">
+            <LinkedIn color="orange" size={"8rem"} />
           </a>
-          <a href="https://linkedin.com/in/your-linkedin-profile" target="_blank" rel="noopener noreferrer">
-            <img src={LinkedIn} alt="LinkedIn" />
+          <a href="https://facebook.com/your-facebook-profile" target="_blank" rel="noopener noreferrer">
+            <Facebook color="orange" size={"8rem"} />
           </a>
-          <a href="https://instagram.com/your-instagram-profile" target="_blank" rel="noopener noreferrer">
-            <img src={Instagram} alt="Instagram" />
+          <a href="https://wa.me/66823321513" target="_blank" rel="noopener noreferrer">
+            <Whatsup color="orange" size={"8rem"} />
           </a>
         </div>
 

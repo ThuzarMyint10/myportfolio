@@ -20,7 +20,7 @@ const Services = () => {
   };
 
   return (
-    <div className="services" id="services">
+    <div className="services" id="service">
       {/* left side */}
       <div className="awesome">
         {/* dark mode */}
@@ -46,8 +46,8 @@ const Services = () => {
         >
           <Card
             emoji={HeartEmoji}
-            heading={"Design"}
-            detail={"Figma, Sketch, Photoshop, Adobe Illustrator, Adobe xd"}
+            heading={"Language"}
+            detail={"Myanmar( Mother language) English (Second language) Advance"}
           />
         </motion.div>
         {/* second card */}
@@ -58,8 +58,8 @@ const Services = () => {
         >
           <Card
             emoji={Glasses}
-            heading={"Developer"}
-            detail={"Html, Css, JavaScript, React, Nodejs, Express"}
+            heading={"My skills"}
+            detail={"Autocad 2D 3D, Steel Structure Estimate, RC Estimate,"}
           />
         </motion.div>
         {/* 3rd */}
@@ -70,9 +70,9 @@ const Services = () => {
         >
           <Card
             emoji={Humble}
-            heading={"UI/UX"}
+            heading={"BIM Skill"}
             detail={
-              "Lorem ispum dummy text are usually use in section where we need some random text"
+              "BIM Archi and Structure, BIM Advance Structure"
             }
             color="rgba(252, 166, 31, 0.45)"
           />

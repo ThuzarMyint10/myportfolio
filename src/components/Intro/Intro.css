@@ -109,16 +109,16 @@
     height: 64rem;
   }
 
-  .i-right {
+  .i-left {
     transform: scale(0.8);
     left: -3rem;
   }
 
-  .i-right > :nth-child(3) {
+  .i-left > :nth-child(3) {
     top: -10%; /* Adjust top for mobile view */
   }
 
-  .i-right .blur {
+  .i-left .blur {
     display: none;
   }
   

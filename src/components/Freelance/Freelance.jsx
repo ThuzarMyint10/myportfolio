@@ -23,7 +23,7 @@ const ImageSlider = () => {
   };
 
   return (
-    <div className="slider">
+    <div className="slider" id="mini">
       <span style={{ color: darkMode ? "white" : "" }}>Freelance</span>
       <span>Mini Project</span>
       <button className="left-arrow" onClick={prevSlide}>

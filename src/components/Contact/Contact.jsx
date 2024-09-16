@@ -2,59 +2,77 @@ import React, { useContext, useRef, useState } from "react";
 import "./Contact.css";
 import emailjs from "@emailjs/browser";
 import { themeContext } from "../../Context";
+
 const Contact = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
-  const form = useRef();
-  const [done, setDone] = useState(false)
-  const sendEmail = (e) => {
-    e.preventDefault();
+  const form = useRef(); // Ref for the form
+  const [done, setDone] = useState(false); // State to handle form submission feedback
 
+  const sendEmail = (e) => {
+    e.preventDefault(); // Prevent default form submission behavior
+
+    // Use emailjs to send form data
     emailjs
       .sendForm(
-        "service_2mu5xtl",
-        "template_m5udu2c",
-        form.current,
-        "VLwg1ltOWvnCYAiK_"
+        "service_6j203sw", // Your EmailJS service ID
+        "template_cyddn27", // Your EmailJS template ID
+        form.current, // Form reference
+        "uOiYLKxlqCbxy7H-t" // Your EmailJS public key
       )
       .then(
         (result) => {
-          console.log(result.text);
-          setDone(true);
-          form.reset();
+          console.log(result.text); // Log the result of the email send
+          setDone(true); // Update state to show success message
+          form.current.reset(); // Reset the form after submission
         },
         (error) => {
-          console.log(error.text);
+          console.log(error.text); // Log any errors during email sending
         }
       );
   };
 
   return (
     <div className="contact-form" id="contact">
-      {/* left side copy and paste from work section */}
+      {/* Left side */}
       <div className="w-left">
         <div className="awesome">
-          {/* darkMode */}
-          <span style={{color: darkMode?'white': ''}}>Get in Touch</span>
+          <span style={{ color: darkMode ? "white" : "" }}>Get in Touch</span>
           <span>Contact me</span>
-          <div
-            className="blur s-blur1"
-            style={{ background: "#ABF1FF94" }}
-          ></div>
+          <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>
         </div>
       </div>
-      {/* right side form */}
+      {/* Right side (Form) */}
       <div className="c-right">
         <form ref={form} onSubmit={sendEmail}>
-          <input type="text" name="user_name" className="user"  placeholder="Name"/>
-          <input type="email" name="user_email" className="user" placeholder="Email"/>
-          <textarea name="message" className="user" placeholder="Message"/>
-          <input type="submit" value="Send" className="button"/>
-          <span>{done && "Thanks for Contacting me"}</span>
-          <div
-            className="blur c-blur1"
-            style={{ background: "var(--purple)" }}
-          ></div>
+          {/* Name input */}
+          <input
+            type="text"
+            name="user_name" // This name must match the one in your EmailJS template
+            className="user"
+            placeholder="Name"
+            required // Make the field required
+          />
+          {/* Email input */}
+          <input
+            type="email"
+            name="user_email" // This name must match the one in your EmailJS template
+            className="user"
+            placeholder="Email"
+            required // Make the field required
+          />
+          {/* Message input */}
+          <textarea
+            name="message" // This name must match the one in your EmailJS template
+            className="user"
+            placeholder="Message"
+            required // Make the field required
+          />
+          {/* Submit button */}
+          <input type="submit" value="Send" className="button" />
+          {/* Show success message if form is submitted */}
+          <span>{done && "Thanks for Contacting me!"}</span>
+          <div className="blur c-blur1" style={{ background: "var(--purple)" }}></div>
         </form>
       </div>
     </div>
